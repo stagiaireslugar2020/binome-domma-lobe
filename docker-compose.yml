@@ -11,7 +11,7 @@ services:
       - './gitlab-data:/var/opt/gitlab'
     ports:
       - '2222:22'
-      - '8081:81'
+      - '8087:80'
       - '4443:443'
       - '4567:4567'
     environment:
