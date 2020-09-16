@@ -27,7 +27,7 @@ services:
 
   #Le service MySQL
   mysql-server:
-    image: mysql
+    image:  192.168.1.11:5000/mysql
     command:
       - mysqld
       - --character-set-server=utf8
@@ -59,7 +59,7 @@ services:
     restart: unless-stopped
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    image: 192.168.1.11:5000/phpmyadmin/phpmyadmin
     ports:
       - "8084:80"
     container_name: phpmyadmin
